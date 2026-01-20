@@ -6948,7 +6948,8 @@
             display: block;
             width: 24px;
             height: 2px;
-            background: #0A0A0A;
+            background: #fff;
+            /* White lines for dark nav background */
             margin: 3px 0;
             transition: all 0.3s ease;
             border-radius: 2px;
@@ -7107,15 +7108,22 @@
                 display: none !important;
             }
 
-            /* Make Sign In button smaller on mobile */
+            /* Make Sign In button visible and smaller on mobile */
             .nav-cta {
-                padding: 8px 16px !important;
-                font-size: 12px !important;
+                display: inline-flex !important;
+                padding: 10px 20px !important;
+                font-size: 13px !important;
+                background: var(--color-accent) !important;
+            }
+
+            /* Make hamburger visible on mobile */
+            .hamburger-btn {
+                display: flex !important;
             }
 
             /* Fix nav container for mobile */
             .nav-content {
-                gap: 8px !important;
+                gap: 12px !important;
             }
 
             /* Reduce transition durations */
